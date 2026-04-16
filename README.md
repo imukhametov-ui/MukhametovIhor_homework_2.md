@@ -136,7 +136,35 @@ ubuntu@ubuntu-VirtualBox:~/lab2$ ls -l file.txt
 -rw-r--r-- 2 ubuntu ubuntu 0 кві 16 22:22 file.txt
 ubuntu@ubuntu-VirtualBox:~/lab2$ ls -l test.txt
 -rw-r--r-- 1 ubuntu ubuntu 0 кві 16 23:45 test.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ sudo adduser trainee
+[sudo] пароль до ubuntu: 
+Вибачте, повторіть спробу.
+[sudo] пароль до ubuntu: 
+Вибачте, повторіть спробу.
+[sudo] пароль до ubuntu: 
+Додається користувач "trainee"...
+Додається нова група "trainee" (1001)...
+Додається новий користувач "trainee" (1001) з групою "trainee"...
+Створюється домашня директорія "/home/trainee"...
+Копіюються файли з "/etc/skel"..
+Новий пароль: 
+Повторіть новий пароль: 
+passwd: пароль було успішно змінено
+Зміна інформації про користувача trainee
+Введіть нове значення або натисніть ENTER для типового значення
+	Ім'я повністю []: ihor
+	Номер кімнати []: 01
+	Робочий телефон []: 038
+	Домашній телефон []: 048
+	Інше []: 0000
+Чи є ця інформація вірною? [Т/н] t
+ubuntu@ubuntu-VirtualBox:~/lab2$ sudo usermod -aG sudo trainee
+ubuntu@ubuntu-VirtualBox:~/lab2$ cat /etc/passwd | grep trainee
+trainee:x:1001:1001:ihor,01,038,048,0000:/home/trainee:/bin/bash
+ubuntu@ubuntu-VirtualBox:~/lab2$ groups trainee
+trainee : trainee sudo
 ubuntu@ubuntu-VirtualBox:~/lab2$ 
+
 
 
 
