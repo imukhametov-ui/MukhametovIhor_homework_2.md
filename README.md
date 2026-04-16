@@ -110,6 +110,23 @@ soft_link.txt
 ubuntu@ubuntu-VirtualBox:~/lab2$ ^C
 ubuntu@ubuntu-VirtualBox:~/lab2$ ^C
 ubuntu@ubuntu-VirtualBox:~/lab2$ 
+//завдання 3
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1 file.txt
+file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ chmod 444 file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1 file.txt
+file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ chmod u+w file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ^C
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1 file.txt
+file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ umask
+0022
+ubuntu@ubuntu-VirtualBox:~/lab2$ umask 022
+ubuntu@ubuntu-VirtualBox:~/lab2$ touch test.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1 test.txt
+test.txt
+
 
 
 
