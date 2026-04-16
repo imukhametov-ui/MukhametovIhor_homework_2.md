@@ -126,6 +126,20 @@ ubuntu@ubuntu-VirtualBox:~/lab2$ umask 022
 ubuntu@ubuntu-VirtualBox:~/lab2$ touch test.txt
 ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1 test.txt
 test.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1
+file_renamed.txt
+file.txt
+hard_link.txt
+soft_link.txt
+test.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -l file.txt
+-rw-r--r-- 2 ubuntu ubuntu 0 кві 16 22:22 file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -l test.txt
+-rw-r--r-- 1 ubuntu ubuntu 0 кві 16 23:45 test.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ 
+
+
+
 
 
 
