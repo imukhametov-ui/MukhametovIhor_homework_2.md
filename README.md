@@ -87,4 +87,29 @@ ubuntu@ubuntu-VirtualBox:/home$ ls
 ubuntu
 ubuntu@ubuntu-VirtualBox:/home$ ^C
 ubuntu@ubuntu-VirtualBox:/home$ 
+//завдання 2
+ubuntu@ubuntu-VirtualBox:/home$ cd ~
+ubuntu@ubuntu-VirtualBox:~$ mkdir lab2
+ubuntu@ubuntu-VirtualBox:~$ cd lab2
+ubuntu@ubuntu-VirtualBox:~/lab2$ touch file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ cp file.txt file_copy.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ mv file_copy.txt file_renamed.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ln file.txt hard_link.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ find ~ -name "file.txt"
+/home/ubuntu/lab2/file.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1
+file_renamed.txt
+file.txt
+hard_link.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ln -s file.txt soft_link.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ls -1
+file_renamed.txt
+file.txt
+hard_link.txt
+soft_link.txt
+ubuntu@ubuntu-VirtualBox:~/lab2$ ^C
+ubuntu@ubuntu-VirtualBox:~/lab2$ ^C
+ubuntu@ubuntu-VirtualBox:~/lab2$ 
+
+
 
